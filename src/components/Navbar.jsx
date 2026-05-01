@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'All Tiles', href: '/all-tiles' },
+    { name: 'Tiles Gallery', href: '/tiles-gallery' },
     { name: 'My Profile', href: '/my-profile' },
   ];
 
