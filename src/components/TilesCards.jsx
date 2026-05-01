@@ -15,7 +15,7 @@ const TilesCards = () => {
         fetchTiles();
     }, []);
 
-    // Prothome matro 8-ti tiles slice kore nilam
+   
     const displayedTiles = tiles.slice(0, 8);
 
     return (

@@ -16,7 +16,6 @@ const TilesCard = ({ tile }) => {
       className="bg-white border border-gray-100 rounded-[2rem] p-4 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col h-full relative group"
     >
       
-      {/* 1. Image Section */}
       <div className="relative mb-5 overflow-hidden rounded-[1.5rem]">
         <div className="absolute top-3 left-3 z-10 bg-white/80 backdrop-blur-md px-3 py-1 rounded-full shadow-sm">
           <span className="text-[10px] font-bold uppercase tracking-widest text-blue-700">
@@ -43,7 +42,6 @@ const TilesCard = ({ tile }) => {
         </div>
       </div>
 
-      {/* 2. Content Section */}
       <div className="px-1 flex-grow">
         <div className="flex justify-between items-start mb-2">
           <h3 className="font-extrabold text-gray-900 text-xl tracking-tight line-clamp-1">
@@ -78,10 +76,10 @@ const TilesCard = ({ tile }) => {
         </div>
       </div>
 
-      {/* 4. Action Button (Redirect to Gallery) */}
+    
       <div className="mt-auto">
         {tile.inStock ? (
-          <Link href="/tiles-gallery"> {/* Click korle tiles-gallery page e jabe */}
+          <Link href="/tiles-gallery"> 
             <motion.button 
               whileTap={{ scale: 0.96 }}
               className="w-full bg-[#0f172a] hover:bg-blue-600 text-white py-4 rounded-2xl flex items-center justify-center gap-3 font-bold text-sm transition-all duration-300 shadow-lg shadow-gray-200 hover:shadow-blue-200"
