@@ -84,13 +84,13 @@ const Navbar = () => {
     
               <>
                 <Link 
-                  href="/singup"
+                  href="/signup"
                   className="flex items-center gap-2 px-4 py-2 text-sm font-bold text-gray-700 hover:text-blue-600 transition-all"
                 >
                   <FiUserPlus size={18} className="text-blue-600" /> Sign Up
                 </Link>
                 <Link 
-                  href="/singin"
+                  href="/signin"
                   className="flex items-center gap-2 px-6 py-2 text-sm font-bold bg-blue-600 text-white rounded-full shadow-lg shadow-blue-200 hover:bg-blue-700 hover:scale-105 transition-all"
                 >
                   <FiLogIn size={18} /> Sign In
@@ -132,14 +132,14 @@ const Navbar = () => {
             ) : (
               <>
                 <Link 
-                  href="/singup" 
+                  href="/signup" 
                   className="flex items-center gap-3 px-4 py-3 font-bold text-gray-700 bg-gray-50 rounded-xl"
                   onClick={() => setIsOpen(false)}
                 >
                   <FiUserPlus size={20} className="text-blue-600" /> Sign Up
                 </Link>
                 <Link 
-                  href="/singin" 
+                  href="/signin" 
                   className="flex items-center gap-3 px-4 py-3 font-bold text-white bg-blue-600 rounded-xl"
                   onClick={() => setIsOpen(false)}
                 >
