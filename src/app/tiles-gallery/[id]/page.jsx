@@ -118,7 +118,7 @@ const TileDetails = async ({ params }) => {
           </div>
         </div>
 
-        {/* Related Products Section */}
+     
         <div className="mt-20">
           <div className="flex justify-between items-end mb-10">
             <div>
