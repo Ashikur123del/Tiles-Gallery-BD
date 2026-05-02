@@ -28,7 +28,6 @@ const Card = ({ item, index }) => {
       whileHover={{ y: -6 }}
       className="group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-shadow duration-300 overflow-hidden"
     >
-      {/* Image Section */}
       <div className="relative h-48 w-full overflow-hidden bg-slate-50">
         <div className="absolute top-3 left-3 z-20 flex gap-2">
           <span className="px-2.5 py-1 bg-white/80 backdrop-blur-md text-blue-600 text-[10px] font-bold rounded-full uppercase tracking-widest">
@@ -50,7 +49,6 @@ const Card = ({ item, index }) => {
         />
       </div>
 
-      {/* Content Section */}
       <div className="p-4 flex flex-col flex-1">
         <div className="flex justify-between items-start gap-2 mb-2">
           <h2 className="text-sm font-bold text-slate-800 line-clamp-1">{title}</h2>

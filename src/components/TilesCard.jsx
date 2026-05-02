@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaExpand, FaLayerGroup, FaArrowRight } from 'react-icons/fa'; 
 import { AiOutlineCloseCircle } from 'react-icons/ai'; 
-import Link from 'next/link'; // Link import korlam
+import Link from 'next/link'; 
 
 const TilesCard = ({ tile }) => {
   return (

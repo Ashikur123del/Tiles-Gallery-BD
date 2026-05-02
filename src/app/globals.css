@@ -1,4 +1,46 @@
 @import "tailwindcss";
-@import "@heroui/styles"; 
+@import "@heroui/styles";
 
+.swiper-button-next,
+.swiper-button-prev {
+  z-index: 50 !important;
+  color: white !important;
+  background: rgba(255, 255, 255, 0.1);
+  width: 55px !important;
+  height: 55px !important;
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease;
+  opacity: 0;
+  pointer-events: auto !important;
+}
 
+.group:hover .swiper-button-next,
+.group:hover .swiper-button-prev {
+  opacity: 1;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #2563eb !important;
+  border-color: #2563eb !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 22px !important;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  width: 35px !important;
+  border-radius: 10px !important;
+  background: #2563eb !important;
+  opacity: 1 !important;
+}

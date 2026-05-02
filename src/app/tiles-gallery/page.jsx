@@ -1,4 +1,3 @@
-// app/tiles-gallery/page.js
 
 import React from 'react';
 import Card from '@/components/Card';
@@ -10,7 +9,7 @@ const TilesGalleryPage = async () => {
 
   try {
     const res = await fetch('https://tiles-gallery-bd.vercel.app/db.json', {
-      next: { revalidate: 60 } // ✅ ISR (1 min cache)
+      next: { revalidate: 60 } 
     });
 
     if (!res.ok) throw new Error("Failed to fetch data");

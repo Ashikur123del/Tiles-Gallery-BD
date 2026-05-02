@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { FiLogIn, FiUserPlus, FiMenu, FiX, FiLogOut, FiUser } from 'react-icons/fi';
+import { FiLogIn, FiUserPlus, FiMenu, FiX, FiLogOut, } from 'react-icons/fi';
 import { HiOutlineSquares2X2 } from "react-icons/hi2";
 import { authClient } from '@/lib/auth-client';
 import { Avatar } from '@heroui/react';

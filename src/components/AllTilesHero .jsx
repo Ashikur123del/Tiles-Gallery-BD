@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import man from '../assets/man.jpg'
 
-
 const AllTilesHero = () => {
   return (
      <div className="relative min-h-[50vh] w-full bg-slate-50">
