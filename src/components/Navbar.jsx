@@ -47,7 +47,7 @@ const Navbar = () => {
   
           <div className="hidden md:flex items-center space-x-8 font-bold text-gray-600">
             <NavLink href='/'>Home</NavLink>
-            <NavLink href='/tiles-gallery'>All Tiles</NavLink>
+            <NavLink href='/tiles-gallery'>Tiles Gallrey</NavLink>
             <NavLink href='/my-profile'>My Profile</NavLink>
           </div>
 
@@ -117,7 +117,7 @@ const Navbar = () => {
 
           <div className="flex flex-col space-y-3 border-b border-gray-50 pb-4 text-gray-600">
             <NavLink className="font-bold" href='/' onClick={() => setIsOpen(false)}>Home</NavLink>
-            <NavLink className="font-bold" href='/tiles-gallery' onClick={() => setIsOpen(false)}>All Tiles</NavLink>
+            <NavLink className="font-bold" href='/tiles-gallery' onClick={() => setIsOpen(false)}>Tiles Gallrey</NavLink>
             <NavLink className="font-bold" href='/my-profile' onClick={() => setIsOpen(false)}>My Profile</NavLink>
           </div>
           
