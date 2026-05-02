@@ -1,5 +1,6 @@
-import React from 'react';
+// app/tiles-gallery/page.js
 
+import React from 'react';
 import Card from '@/components/Card';
 import AllTilesHero from '@/components/AllTilesHero ';
 
@@ -9,17 +10,18 @@ const TilesGalleryPage = async () => {
 
   try {
     const res = await fetch('https://tiles-gallery-bd.vercel.app/db.json', {
-      cache: "no-store"
+      next: { revalidate: 60 } // ✅ ISR (1 min cache)
     });
 
     if (!res.ok) throw new Error("Failed to fetch data");
 
     const data = await res.json();
-    
+
     allTiles = Array.isArray(data) ? data : (data.tiles || []);
 
   } catch (error) {
     console.error("Fetch Error:", error);
+
     return (
       <div className="container mx-auto p-10 text-center text-red-500 font-bold">
         Failed to load tiles. Please try again later.
